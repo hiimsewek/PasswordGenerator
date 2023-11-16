@@ -1,10 +1,11 @@
+import { PasswordProvider } from "contexts";
 import { PasswordGenerator } from "components";
 
 const App = () => {
   return (
-    <div>
+    <PasswordProvider>
       <PasswordGenerator />
-    </div>
+    </PasswordProvider>
   );
 };
 
