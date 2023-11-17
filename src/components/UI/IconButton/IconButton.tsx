@@ -1,8 +1,12 @@
 import { FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
 import { StyledIcon } from "./IconButton.styled";
 
-const IconButton = (props: FontAwesomeIconProps) => {
-  return <StyledIcon {...props} />;
+type IconButtonProps = FontAwesomeIconProps & {
+  onClick: () => void;
+};
+
+const IconButton = ({ onClick, ...restProps }: IconButtonProps) => {
+  return <StyledIcon {...restProps} onClick={onClick} />;
 };
 
 export default IconButton;
