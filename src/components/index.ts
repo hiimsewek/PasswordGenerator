@@ -1,2 +1,2 @@
 export { PasswordGenerator } from "./PasswordGenerator";
-export { IconButton, Input, RangeSlider, ToggleSwitch } from "./UI";
+export { IconButton, Input, RangeSlider, ToggleSwitch, Toast } from "./UI";
