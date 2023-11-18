@@ -23,11 +23,18 @@ const usePasswordPanel = () => {
     });
 
     setPassword(generatedPassword);
-  }, [length, lowercaseActive, uppercaseActive, numbersActive, symbolsActive]);
+  }, [
+    length,
+    lowercaseActive,
+    uppercaseActive,
+    numbersActive,
+    symbolsActive,
+    setPassword,
+  ]);
 
   useEffect(() => {
     generateAndUpdate();
-  }, [length, lowercaseActive, uppercaseActive, numbersActive, symbolsActive]);
+  }, [generateAndUpdate]);
 
   return { password, generateAndUpdate };
 };
