@@ -2,6 +2,8 @@
 
 PasswordGenerator is a progressive web application that allows you to generate secure passwords.
 
+[Live Demo](https://passwordgenerator-a2f10.web.app/)
+
 ## Table of contents
 
 - [Tech Stack](#tech-stack)
